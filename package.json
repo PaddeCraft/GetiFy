@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "css": "npx tailwind -i src.css -o ./static/main.css -w"
+  },
+  "devDependencies": {
+    "daisyui": "^2.37.0"
+  }
+}

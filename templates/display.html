@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display Results | GetiFy</title>
+        <link rel="stylesheet" href="/static/main.css" />
+        <link rel="stylesheet" href="/static/jsonTree.css" />
+        <script src="/static/jsonTree.js"></script>
+        <script src="/static/display.js"></script>
+    </head>
+    <body class="p-5">
+        <h1 class="text-5xl pb-10">Results for <span id="code"></span></h1>
+        <table class="table table-compact">
+            <tr>
+                <th>URL</th>
+                <td id="url">Loading</td>
+            </tr>
+            <tr>
+                <th>Expires</th>
+                <td id="expires">In some time</td>
+            </tr>
+            <tr>
+                <th>Results</th>
+                <td id="result_cnt">0</td>
+            </tr>
+        </table>
+        <div class="tabs pt-5" id="results"></div>
+        <div id="tabdsp" class="pt-3">
+            Seems like you are waiting for your first result. Relax, I think
+            you'll get it soon!
+        </div>
+    </body>
+</html>
