@@ -49,11 +49,18 @@ def deleteThread():
 
 app = Flask("GetiFy")
 Thread(target=deleteThread).start()
-limiter = Limiter(
-    app,
-    key_func=get_remote_address,
-    default_limits=[],
-)
+try:
+    limiter = Limiter(
+        app,
+        key_func=get_remote_address,
+        default_limits=[],
+    )
+except Exception:
+    limiter = Limiter(
+        app=app,
+        key_func=get_remote_address,
+        default_limits=[],
+    )
 
 
 @app.route("/api/bycode")
